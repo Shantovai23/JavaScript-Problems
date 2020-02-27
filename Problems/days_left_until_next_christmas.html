@@ -1,0 +1,21 @@
+<script>
+
+    today=new Date()
+    var Christmas=new Date(today.getFullYear(),11,25);
+
+    if(today.getMonth()==11 && today.getDate()>25){
+
+        Christmas.setFullYear(Christmas.getFullYear()+1);
+
+    }
+
+    var one_day=1000*60*60*24;
+
+    var diff= Christmas.getTime()-today.getTime();
+
+    days_left=diff/one_day;
+
+    document.write(Math.ceil(days_left));
+
+
+</script>

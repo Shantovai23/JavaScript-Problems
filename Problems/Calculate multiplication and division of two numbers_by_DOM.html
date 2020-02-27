@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <style>
+
+        body{
+            margin-left: 30px;
+            margin-top: 30px;
+        }
+    
+    </style>
+
+ Enter 1st Number:<input type="text" id="FirstNumber">
+ <br><br>
+ Enter 2nd Number :<input type="text" id="SecondNumber">
+ <br><br>
+
+ <input type="button" onClick="multipleBy()" value="Multiplication">
+ <input type="button" onClick="divisionBy()" value="division">
+ 
+ <p>The result is : </p>
+ <span id="result"></span>
+
+
+ <script>
+
+     function multipleBy(){
+
+          num1=document.getElementById("FirstNumber").value;
+          num2=document.getElementById("SecondNumber").value
+
+         document.getElementById("result").innerHTML=num1*num2;
+        
+     }
+
+
+     function divisionBy(){
+         num1=document.getElementById("FirstNumber").value;
+
+         num2=document.getElementById("SecondNumber").value;
+
+        document.getElementById("result").innerHTML=num1/num2;
+
+     }
+ 
+ </script>
+    
+</body>
+</html>
